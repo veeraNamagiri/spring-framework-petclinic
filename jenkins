@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('SCM checkout') {
             steps {
-                git changelog: false, poll: false, url: 'https://github.com/prasad888/spring-framework-petclinic.git'
+                git changelog: false, poll: false, url: 'git@github.com:veeraNamagiri/spring-framework-petclinic.git'
             }
         }
         
