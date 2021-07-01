@@ -17,7 +17,7 @@ pipeline {
         stage('Storing war into artifactory') {
             steps {
                 sh 'mv target/petclinic.war target/petclinic-$BUILD_NUMBER.war'
-                sh 'aws s3 cp target/petclinic-$BUILD_NUMBER.war s3://lap.123'
+                sh 'aws s3 cp target/petclinic-$BUILD_NUMBER.war s3://virush-artifactory'
             }
         }
         
